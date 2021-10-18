@@ -1,0 +1,174 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-01-19T19:24:25.579Z",
+    "end": "2021-01-19T19:24:53.765Z",
+    "duration": 28186,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "23347969-ba1e-492b-99b2-9af7964086fb",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8915d3df-b1ac-4839-a603-c23a843b93f5",
+          "title": "Test skenario",
+          "fullFile": "C:\\Users\\Antonius\\auttest\\_test.js",
+          "file": "\\_test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook: codeceptjs.beforeSuite in \"Test skenario\"",
+              "fullTitle": "Test skenario \"before all\" hook: codeceptjs.beforeSuite in \"Test skenario\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.suiteSetup(suite)",
+              "err": {},
+              "uuid": "044202ab-2f46-42c2-830a-e7234e68c6f0",
+              "parentUUID": "8915d3df-b1ac-4839-a603-c23a843b93f5",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"before each\" hook: codeceptjs.before in \"Test skenario\"",
+              "fullTitle": "Test skenario \"before each\" hook: codeceptjs.before in \"Test skenario\"",
+              "timedOut": false,
+              "duration": 1936,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.setup(suite)",
+              "err": {},
+              "uuid": "29e2a491-b8cc-4264-b3d8-12bea6ec6683",
+              "parentUUID": "8915d3df-b1ac-4839-a603-c23a843b93f5",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook: codeceptjs.afterSuite in \"Test skenario\"",
+              "fullTitle": "Test skenario \"after all\" hook: codeceptjs.afterSuite in \"Test skenario\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.suiteTeardown(suite)",
+              "err": {},
+              "uuid": "9890bc69-4c81-40d5-b14b-898f60769ded",
+              "parentUUID": "8915d3df-b1ac-4839-a603-c23a843b93f5",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"after each\" hook: finalize codeceptjs in \"Test skenario\"",
+              "fullTitle": "Test skenario \"after each\" hook: finalize codeceptjs in \"Test skenario\"",
+              "timedOut": false,
+              "duration": 170,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.teardown(suite)",
+              "err": {},
+              "uuid": "7422ad62-5397-4288-8eec-c25e0aa5e8f1",
+              "parentUUID": "8915d3df-b1ac-4839-a603-c23a843b93f5",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "purchase",
+              "fullTitle": "Test skenario: purchase",
+              "timedOut": false,
+              "duration": 26071,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "I }) => {\n    //add to cart\n    await I.amOnPage('https://www.demoblaze.com/index.html')\n    await I.click('Laptops')\n    await I.click('Dell i7 8gb')\n    await I.see('Product Store')\n    await I.click('Add to cart')\n    await I.acceptPopup()\n    await I.click('Cart')\n    //buat tagihan\n    await I.see('Cart')\n    await I.click('Place Order')\n    await I.fillField('#name', 'joko')\n    await I.fillField('#country', 'Indonesia')\n    await I.fillField('#city', 'Yogyakarta')\n    await I.fillField('#card', '1234567890')\n    await I.fillField('#month', 'Januari')\n    await I.fillField('#year', '2021')\n    await I.click('Purchase')\n    await I.see('purchase')\n    await I.click('OK')",
+              "err": {},
+              "uuid": "3abc00ab-8525-498f-9fc7-e7b5626012a1",
+              "parentUUID": "8915d3df-b1ac-4839-a603-c23a843b93f5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "3abc00ab-8525-498f-9fc7-e7b5626012a1"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 26071,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 0
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 0
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "8.1.3"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {},
+      "version": "5.1.0"
+    }
+  }
+}

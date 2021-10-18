@@ -1,0 +1,18 @@
+{
+  "name": "Autopay",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "codeceptjs run --reporter mochawesome"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "codeceptjs": "^3.0.0",
+    "dotenv": "^10.0.0",
+    "mochawesome": "^6.2.1",
+    "puppeteer": "^5.3.1"
+  }
+}
